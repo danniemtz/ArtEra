@@ -1,0 +1,58 @@
+.artwork-card {
+    background-color: #e6eaf3;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 250px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artwork-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #3d2b6d;
+  }
+/*   
+  .heart-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+  } */
+  
+  .artwork-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .artwork-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .artist-name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .view-button {
+    background-color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #3d2b6d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-button:hover {
+    background-color: #f0f0f0;
+  }
+  
