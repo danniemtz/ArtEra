@@ -1,12 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/ArtCard.css"; 
+import "../styles/ArtCard.css";
 
-export default function ArtworkCard({ artwork }) {
-  const navigate = useNavigate();
-
+export default function ArtworkCard({ artwork, onSelect }) {
   const {
-    objectID,
     primaryImageSmall,
     artistDisplayName,
     title
@@ -15,7 +11,7 @@ export default function ArtworkCard({ artwork }) {
   return (
     <div className="artwork-card">
       <div className="artwork-card-header">
-        <h4>Art Piece</h4>
+        <h4>{title}</h4>
       </div>
 
       <img
@@ -28,7 +24,7 @@ export default function ArtworkCard({ artwork }) {
         <p className="artist-name">{artistDisplayName || "Unknown Artist"}</p>
         <button
           className="view-button"
-          onClick={() => navigate(`/artwork/${objectID}`)}
+          onClick={() => onSelect(artwork)} // this will trigger the modal to open
         >
           View
         </button>

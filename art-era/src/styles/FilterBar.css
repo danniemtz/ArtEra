@@ -1,0 +1,39 @@
+.filterbar-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #486284;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filter-button.active {
+    background-color: #D3DCE7;
+  }
+
+  .filterbar-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clear-button {
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  
