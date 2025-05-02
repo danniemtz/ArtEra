@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+.home-main {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f6f7fb;
+  }
+  
+.hero-wrapper {
+    position: relative;
+    background-color: #f6f7fb; 
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+  }
+  
+.hero-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #CED7E4;
+    z-index: 0;
+  }
+  
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0rem 3rem 5rem;
+    }
+  
+.hero-text {
+    max-width: 50%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+.hero-text h1 {
+    font-size: 50px;
+  }
+  
+.hero-content img {
+    margin-top: 7.5rem;
+    height: 100%;
+    display: block;
+  }
+  
+  
+button {
+    padding: 0.5rem 1.2rem;
+    background-color: #486284;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+.how-it-works {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  
+.prototype-goals {
+    padding: 2rem;
+  }
+  
+.how-it-works {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f6f7fb;
+  }
+  
+.steps-wrapper {
+    position: relative;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+.steps-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    padding: 3rem 0;
+    max-width: 1100px; 
+    margin: 0 auto;
+  }
+  
+.step {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+.step img {
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+  }
+  
+.swiggle {
+    height: 50px;
+    width: auto;
+    align-self: center;
+  }
+  
+  
+.steps-wrapper h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #486284;
+}
+.steps-wrapper h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 100;
+    color: #1A202C;
+}
+
+.steps-wrapper h4{
+    color: #1A202C;
+}
+
+.prototype-goals {
+    padding: 3rem 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+.prototype-goals h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #486284;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+.prototype-goals h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #1A202C;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+.goals-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  
+.goals-content ul {
+    flex: 1;
+    min-width: 300px;
+    font-size: 16px;
+    color: #1A202C;
+    line-height: 1.8;
+    padding-left: 1.2rem;
+  }
+  
+.goals-content img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    min-width: 280px;
+  }
+  
+.section-divider {
+    height: 75px;
+    background-color: #eeeeef;
+    border: none;
+    width: 100%;
+  }
+  
+.goal-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+.goal-list > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+.goal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+.bullet {
+    width: 14px;
+    height: 14px;
+    background-color: #486284;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+    flex-shrink: 0;
+  }
+  
+.goal-title {
+    font-weight: 700;
+    color: #1A202C;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  
+.goal-description {
+    margin-left: 1.75rem !important;
+    padding-left: 1rem !important;
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    font-size: 15px !important;
+    color: #1A202C !important;
+    line-height: 1.6 !important;
+  }
+  
+.goal-description li {
+    margin-bottom: 0.4rem !important;
+  }
+  
+  
+
+  
+  
