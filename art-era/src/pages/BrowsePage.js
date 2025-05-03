@@ -26,7 +26,7 @@ export default function BrowsePage() {
   const [searchInput, setSearchInput] = useState("");
   const [selectedFilter, setSelectedFilter] = useState(null);
   const [selectedArtwork, setSelectedArtwork] = useState(null);
-  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [artworks, setArtworks] = useState([]);
 
@@ -44,7 +44,24 @@ export default function BrowsePage() {
   // Handle search based on input and selected filter
   const handleSearch = async () => {
     if (!selectedFilter) {
-      setShowPopup(true);
+      setPopupMessage("Please select a filter before searching.");
+      return;
+    }
+
+    if (!searchInput.trim()) {
+      setPopupMessage("Please enter something into the search bar.");
+      return;}
+
+    const regexes = {
+      Era: /^[a-zA-Z0-9\s\-]{2,}$/,
+      Artist: /^[a-zA-Z\s]{2,}$/,
+      Culture: /^[a-zA-Z\s]{2,}$/,
+      Title: /^[a-zA-Z0-9\s\-\,\.\'\"]{2,}$/
+    };
+
+    const isValid = regexes[selectedFilter]?.test(searchInput.trim());
+    if (!isValid) {
+      setPopupMessage(`Your input doesn’t seem valid for the selected filter: ${selectedFilter}. Try something like "${getExampleInput(selectedFilter)}".`);
       return;
     }
 
@@ -55,6 +72,15 @@ export default function BrowsePage() {
     });
     setArtworks(results);
     setLoading(false);
+  };
+  const getExampleInput = (filter) => {
+    const examples = {
+      Era: "18th Century",
+      Artist: "Frida Kahlo",
+      Culture: "Mexican",
+      Title: "The Starry Night"
+    };
+    return examples[filter] || "a valid value";
   };
 
   const handleClear = () => {
@@ -116,12 +142,12 @@ export default function BrowsePage() {
         />
       )}
 
-      {showPopup && (
-        <WarningPopup
-          message="Please select a filter before searching."
-          onClose={() => setShowPopup(false)}
-        />
-      )}
+      {popupMessage && (
+          <WarningPopup
+            message={popupMessage}
+            onClose={() => setPopupMessage(null)}
+          />
+        )}
     </div>
     <Footer />
 
