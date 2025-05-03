@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+.team {
+    padding: 4rem;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+  
+.team h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #486284;
+  }
+.team h3{
+    color: #1A202C;
+    font-weight: 100;
+}
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+.team-card {
+    background-color: #D3DCE7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(61, 43, 109, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+.team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+.team-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #486284;
+  }
+  
+.team-card p {
+    font-size: 0.9rem;
+    color: #474646;
+    margin-top: 0.5rem;
+    letter-spacing: 1.5px;
+  }
+  
