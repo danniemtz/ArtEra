@@ -1,4 +1,4 @@
-.modal-overlay {
+.M-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     padding: 0rem;      
   }
   
-  .modal-box {
+  .M-modal-box {
     background-color: #e6eaf3;
     border-radius: 16px;
     max-width: 800px;
@@ -30,7 +30,7 @@
 
   }
   
-  .modal-close {
+  .M-modal-close {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -44,12 +44,12 @@
     font-size: x-large;
   }
   
-  .modal-image-container {
+  .M-modal-image-container {
     width: 100%;
     margin-bottom: 1rem;
   }
   
-  .modal-image {
+  .M-modal-image {
     max-width: 100%;
     max-height: 60vh; 
     border-radius: 12px;
@@ -57,25 +57,25 @@
     object-fit: contain;
   }
   
-  .modal-details {
+  .M-modal-details {
     margin-top: 1rem;
     padding-bottom: 2rem;  
   }
   
-  .modal-title {
+  .M-modal-title {
     font-size: 1.75rem;
     font-weight: bold;
     color: #3d2b6d;
     margin-bottom: 0.5rem;
   }
   
-  .modal-artist {
+  .M-modal-artist {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
   }
   
-  .modal-description {
+  .M-modal-description {
     font-size: 0.95rem;
     line-height: 1.6;
     color: #333;
