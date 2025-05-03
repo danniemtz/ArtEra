@@ -4,6 +4,8 @@ import FilterBar from "../components/FilterBar";
 import ArtworkCard from "../components/ArtworkCard";
 import ArtworkModal from "./ArtworkModal";
 import Masonry from "react-masonry-css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import { fetchRandomArtworks, searchArtworks } from "../api/artworkAPI";
 import "../styles/BrowsePage.css";
@@ -67,6 +69,8 @@ export default function BrowsePage() {
   };
 
   return (
+    <>
+      <Header />
     <div className="B-browse-page">
       <h2 className="B-browse-header">Discover Artist Around the World</h2>
       <p className="B-browse-subheader">
@@ -119,5 +123,8 @@ export default function BrowsePage() {
         />
       )}
     </div>
+    <Footer />
+
+    </>
   );
 }
