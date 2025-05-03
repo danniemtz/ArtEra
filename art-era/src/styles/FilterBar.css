@@ -1,11 +1,11 @@
-.filterbar-container {
+.F-filterbar-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
   }
   
-  .filter-button {
+  .F-filter-button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 10px;
@@ -15,18 +15,18 @@
     cursor: pointer;
   }
   
-  .filter-button.active {
+  .F-filter-button.active {
     background-color: #D3DCE7;
   }
 
-  .filterbar-wrapper {
+  .F-filterbar-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
   
-  .clear-button {
+  .F-clear-button {
     margin-top: 1rem;
     padding: 0.4rem 1rem;
     border: none;
@@ -34,6 +34,7 @@
     background-color: #ddd;
     cursor: pointer;
     font-weight: 500;
+    color: #486284;
   }
   
   

@@ -11,9 +11,9 @@ import "../styles/BrowsePage.css";
 // Popup for missing filter selection
 function WarningPopup({ message, onClose }) {
   return (
-    <div className="popup-backdrop">
-      <div className="popup-box">
-        <button className="popup-close" onClick={onClose}>×</button>
+    <div className="B-popup-backdrop">
+      <div className="B-popup-box">
+        <button className="B-popup-close" onClick={onClose}>×</button>
         <p>{message}</p>
       </div>
     </div>
@@ -67,9 +67,9 @@ export default function BrowsePage() {
   };
 
   return (
-    <div className="browse-page">
-      <h2 className="browse-header">Discover Artist Around the World</h2>
-      <p className="browse-subheader">
+    <div className="B-browse-page">
+      <h2 className="B-browse-header">Discover Artist Around the World</h2>
+      <p className="B-browse-subheader">
         Discover made easy! Explore diverse artworks by Era, Artist, Culture, or Title.
       </p>
 
@@ -85,15 +85,15 @@ export default function BrowsePage() {
         onSearch={handleSearch}
       />
 
-      <h3 className="gallery-title">Browse Through Various Art Works</h3>
+      <h3 className="B-gallery-title">Browse Through Various Art Works</h3>
 
       {loading ? (
         <p>Loading...</p>
       ) : (
         <Masonry
           breakpointCols={breakpointColumnsObj}
-          className="masonry-grid"
-          columnClassName="masonry-column"
+          className="B-masonry-grid"
+          columnClassName="B-masonry-column"
         >
           {artworks.map((art) => (
             <ArtworkCard

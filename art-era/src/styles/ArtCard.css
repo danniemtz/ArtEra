@@ -1,4 +1,4 @@
-.artwork-card {
+.A-artwork-card {
     background-color: #e6eaf3;
     border-radius: 12px;
     padding: 1rem;
@@ -7,62 +7,63 @@
     display:flex;
     flex-direction: column;
     gap: 0.5rem;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
     height: auto; 
+    margin-bottom: 2rem;
 
-  }
-  
-  .artwork-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    color: #3d2b6d;
-  }
+}
+
+.A-artwork-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #3d2b6d;
+}
 /*   
-  .heart-icon {
-    font-size: 1.2rem;
-    cursor: pointer;
-  } */
-  
-  .artwork-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .artwork-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .artist-name {
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .view-button {
-    background-color: white;
-    border: none;
-    padding: 0.4rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    color: #3d2b6d;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .view-button:hover {
-    background-color: #f0f0f0;
-  }
+.heart-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+} */
 
-.art-grid {
+.A-artwork-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.A-artwork-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.A-artist-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.A-view-button {
+  background-color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #3d2b6d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.A-view-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* .B-art-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 2rem;
     align-items: start; /* prevents row syncing height */
-}
+
   
   

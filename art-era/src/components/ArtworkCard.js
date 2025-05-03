@@ -9,21 +9,21 @@ export default function ArtworkCard({ artwork, onSelect }) {
   } = artwork;
 
   return (
-    <div className="artwork-card">
-      <div className="artwork-card-header">
+    <div className="A-artwork-card">
+      <div className="A-artwork-card-header">
         <h4>{title}</h4>
       </div>
 
       <img
         src={primaryImageSmall}
         alt={title}
-        className="artwork-image"
+        className="A-artwork-image"
       />
 
-      <div className="artwork-info">
-        <p className="artist-name">{artistDisplayName || "Unknown Artist"}</p>
+      <div className="A-artwork-info">
+        <p className="A-artist-name">{artistDisplayName || "Unknown Artist"}</p>
         <button
-          className="view-button"
+          className="A-view-button"
           onClick={() => onSelect(artwork)} // this will trigger the modal to open
         >
           View

@@ -1,27 +1,32 @@
-.browse-page {
+.B-browse-page {
     padding: 2rem;
     text-align: center;
     background-color: #FAFBFD;
-  }
-  
-  .browse-header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.B-browse-header {
     font-size: 2rem;
     color: #486284;
-  }
-  
-  .browse-subheader {
+}
+
+.B-browse-subheader {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     color: #555;
-  }
-  
-.gallery-title {
+}
+
+.B-gallery-title {
     margin: 2rem 0 1rem;
     font-size: 1.5rem;
     color: #486284;
 }
-  
-.art-grid {
+
+.B-art-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 2rem;
@@ -30,7 +35,7 @@
 }
 
 
-.popup-backdrop {
+.B-popup-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,8 +47,8 @@
     align-items: center;
     z-index: 10;
 }
-  
-.popup-box {
+
+.B-popup-box {
     background: white;
     padding: 1.5rem;
     border-radius: 12px;
@@ -52,8 +57,8 @@
     position: relative;
     width: 300px;
 }
-  
-.popup-close {
+
+.B-popup-close {
     position: absolute;
     top: 10px;
     right: 12px;
@@ -62,19 +67,18 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-  
-.masonry-grid {
+
+.B-masonry-grid {
     display: flex;
     margin-left: -1rem; /* gutter fix */
     width: auto;
 }
-  
-.masonry-column {
+
+.B-masonry-column {
     padding-left: 1rem;
     background-clip: padding-box;
 }
-  
-.masonry-column > .artwork-card {
+
+.B-masonry-column > .artwork-card {
     margin-bottom: 1.5rem;
 }
-  
