@@ -1,8 +1,8 @@
 {
-  "homepage": "https://danniemtz.github.io/ArtEra",
-  "name": "art-era",
+  "name": "artera",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://danniemtz.github.io/ArtEra",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
