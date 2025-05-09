@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ArtEra/static/css/main.f69682dd.css",
-    "main.js": "/ArtEra/static/js/main.9c4360cf.js",
+    "main.js": "/ArtEra/static/js/main.9e0ba6fb.js",
     "static/js/453.45f7afcf.chunk.js": "/ArtEra/static/js/453.45f7afcf.chunk.js",
     "index.html": "/ArtEra/index.html",
     "main.f69682dd.css.map": "/ArtEra/static/css/main.f69682dd.css.map",
-    "main.9c4360cf.js.map": "/ArtEra/static/js/main.9c4360cf.js.map",
+    "main.9e0ba6fb.js.map": "/ArtEra/static/js/main.9e0ba6fb.js.map",
     "453.45f7afcf.chunk.js.map": "/ArtEra/static/js/453.45f7afcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f69682dd.css",
-    "static/js/main.9c4360cf.js"
+    "static/js/main.9e0ba6fb.js"
   ]
 }
