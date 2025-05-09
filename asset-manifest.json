@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ArtEra/static/css/main.9f79488a.css",
+    "main.js": "/ArtEra/static/js/main.f9d1dc4b.js",
+    "static/js/453.b699135d.chunk.js": "/ArtEra/static/js/453.b699135d.chunk.js",
+    "index.html": "/ArtEra/index.html",
+    "main.9f79488a.css.map": "/ArtEra/static/css/main.9f79488a.css.map",
+    "main.f9d1dc4b.js.map": "/ArtEra/static/js/main.f9d1dc4b.js.map",
+    "453.b699135d.chunk.js.map": "/ArtEra/static/js/453.b699135d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f79488a.css",
+    "static/js/main.f9d1dc4b.js"
+  ]
+}
