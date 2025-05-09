@@ -72,7 +72,7 @@
 .B-masonry-grid {
     display: flex;
     margin-left: -1rem; /* gutter fix */
-    width: auto;
+    width: 100%;
     
     
 }

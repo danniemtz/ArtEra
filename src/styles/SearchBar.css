@@ -3,6 +3,7 @@
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0;
+    position: relative; 
   }
   
   .S-searchbar-input {
@@ -22,4 +23,35 @@
     font-weight: bold;
     cursor: pointer;
   }
+
+  .S-suggestion-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: calc(100% - 6px);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .S-suggestion-list li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .S-suggestion-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+.S-suggestion-list li:last-child {
+  border-bottom: none;
+}
   

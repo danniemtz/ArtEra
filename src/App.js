@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import BrowsePage from './pages/BrowsePage';
 
 function App() {
   return (
-    <Router basename="/ArtEra">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/browse" element={<BrowsePage />} />
@@ -13,5 +13,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

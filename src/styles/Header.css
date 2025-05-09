@@ -94,3 +94,11 @@
     background-color: #657799;
   }
   
+.nav-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+}
